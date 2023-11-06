@@ -4,7 +4,7 @@ import edu.kau.fcit.cpit252.observers.Observer;
 
 
 public interface Subject{
-    public void subscribe(Observer o);
-    public void unsubscribe(Observer o);
-    public void notifyUpdate(String m);
+    void subscribe(Observer o);
+    void unsubscribe(Observer o);
+    void notifyUpdate(String m);
 }
