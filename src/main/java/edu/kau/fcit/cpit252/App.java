@@ -15,7 +15,7 @@ public class App {
             Browser browser = playwright.chromium().launch();
             Page page = browser.newPage();
             // Navigate and scrape product titles and prices
-            page.navigate("https://cpit252.gitlab.io/html/lab-8/");
+            page.navigate("https://cpit252.gitlab.io/html/lab-9/");
             List<String>  products = page.locator("h2.title").allInnerTexts();
             List<String>  prices = page.locator("p.price").allInnerTexts();
             for (int i=0; i< products.size(); i++) {
